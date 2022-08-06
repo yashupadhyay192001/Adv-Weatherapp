@@ -12,7 +12,7 @@ function Hourly({items}) {
   return (
     <div>
         <p className='text-white text-lg font-semibold mt-3'>Hourly Forecast</p>
-        <div className='flex flex-row md:flex-none overflow-scroll md:overflow-hidden w-full h-full py-3'>
+        <div className='flex flex-row md:flex-none overflow-scroll scrollbar-hide md:overflow-hidden w-full h-full py-3'>
             {items.map((item) => (
                 <div className={`flex flex-col w-full text-white px-2 shadow-sm items-center justify-center ${changeHourlyBackground(item)}`}>
                 <p className='font-semibold mt-3'>{item.title}</p>
